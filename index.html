@@ -1,13 +1,32 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html>
+    <head >
+        <tittle> Quicker!</tittle>
+        <style>
+            img{
+                width: 100px;
+                border-radius: 50px;
+                border-style: ridge;
+                float: left;
+                margin-right: 50px;
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+            }
+            .username {
+                font-size:large;
+                font-weight: bold;
+            }
+            .heading{
+                font-size: larger;
+                font-style: italic;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/images (7).jpg">
+        <h1 class="heading"> "welcome to my page" </h1>
+        <p class="username"> @quicker</p>
+        <p>My fst web page developed </p>
+
+    </body>
+</html>
